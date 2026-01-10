@@ -89,5 +89,3 @@ except Exception as e:
     logger.error(f"❌ Training failed: {str(e)}")
     logger.error("Make sure train.csv exists in the current directory")
     print(f"\n❌ Training failed: {str(e)}")
-
-
