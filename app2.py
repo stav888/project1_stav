@@ -1,7 +1,6 @@
 """
 Loan Approval Checker - Web App
 Predicts if a loan will be approved
-Run with: streamlit run app2.py
 """
 
 import pandas as pd
@@ -10,18 +9,16 @@ import streamlit as st
 import os
 from log import logger
 
-# Path to the trained model file
+# Model and data paths
 MODEL_PATH = "model.joblib"
-# Path to the file containing model accuracy
 ACCURACY_PATH = "accuracy.txt"
-# Path to the training data CSV
 TRAIN_DATA_PATH = "train.csv"
 
-# List of feature names used for prediction
+# Feature columns for model prediction
 FEATURES = ['Married', 'Education', 'ApplicantIncome', 'CoapplicantIncome',
             'LoanAmount', 'Loan_Amount_Term', 'Credit_History']
 
-#  Page Configuration 
+# Configure Streamlit page
 st.set_page_config(
     page_title="Loan Approval Checker",
     page_icon="🏦",
@@ -34,7 +31,7 @@ logger.info("="*70)
 logger.info("LOAN APPROVAL CHECKER APP STARTED")
 logger.info("="*70)
 
-#  Load Model 
+# Load prediction model
 logger.info(f"Loading model from {MODEL_PATH}...")
 
 if not os.path.exists(MODEL_PATH):
@@ -43,7 +40,7 @@ if not os.path.exists(MODEL_PATH):
     st.error("The model file was not found. Please train the model and save it before running the app.")
     st.stop()
 
-#  Cache Model Loading 
+#  Cache Model Loading
 @st.cache_resource
 def load_model(path: str):
     return joblib.load(path)
@@ -51,7 +48,7 @@ def load_model(path: str):
 model = load_model(MODEL_PATH)
 logger.info("Model loaded successfully")
 
-#  Input Form (screenshot-friendly UI) 
+#  Input Form (screenshot-friendly UI)
 with st.form("loan_form"):
     st.subheader("Loan Application Details")
 
@@ -107,7 +104,7 @@ with st.form("loan_form"):
 
     submitted = st.form_submit_button("Check Loan Eligibility")
 
-#  Process Prediction 
+#  Process Prediction
 if submitted:
     married_val = 1 if married == "Married" else 0
     edu_val = 1 if education == "Graduate" else 0
@@ -115,7 +112,7 @@ if submitted:
     total_income = applicant_income + coapplicant_income
     logger.info(f"Loan application - Married: {married}, Education: {education}, Credit: {credit_history}, Income: {total_income}, LoanAmount: {loan_amount}")
 
-    # Check requirements: must be married AND educated AND credit history AND income sufficient
+    # Validation rules
     if married_val == 0:
         logger.warning("Rejected: not married")
         st.error("Sorry, you are not eligible for the loan. Applicants must be married.")
@@ -132,6 +129,7 @@ if submitted:
         logger.warning("Rejected: applicant income below 3000 with no coapplicant")
         st.error("Sorry, you are not eligible for the loan. Applicant income must be at least 3000 and coapplicant income cannot be negative.")
     else:
+        # Prepare data for prediction
         data = pd.DataFrame([{
             "Married": married_val,
             "Education": edu_val,
@@ -143,6 +141,7 @@ if submitted:
         }])
 
         try:
+            # Get prediction from model
             result = model.predict(data)[0]
             if result == 1:
                 logger.info(f"APPROVED - Income: {total_income}, LoanAmount: {loan_amount}")
@@ -154,7 +153,7 @@ if submitted:
             logger.error(f"Prediction error: {str(e)}")
             st.error(f"Error making prediction: {str(e)}")
 
-#  Show Accuracy Button 
+#  Show Accuracy Button
 if st.button("Show Model Accuracy"):
     logger.info("Accuracy button clicked")
     try:
@@ -174,5 +173,4 @@ if st.button("Show Model Accuracy"):
     except ValueError as e:
         logger.error(f"Error reading accuracy: {str(e)}")
         st.error("Error reading accuracy file")
-
 
