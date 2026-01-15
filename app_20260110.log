@@ -1,0 +1,131 @@
+2026-01-10 13:56:10,456 - loan_app - INFO - ======================================================================
+2026-01-10 13:56:10,456 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:56:10,456 - loan_app - INFO - ======================================================================
+2026-01-10 13:56:10,456 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:56:10,457 - loan_app - ERROR - Model file not found: model.joblib
+2026-01-10 13:56:17,262 - loan_app - INFO - ======================================================================
+2026-01-10 13:56:17,262 - loan_app - INFO - STARTING MODEL TRAINING
+2026-01-10 13:56:17,263 - loan_app - INFO - ======================================================================
+2026-01-10 13:56:17,263 - loan_app - INFO - Loading training data from train.csv...
+2026-01-10 13:56:17,278 - loan_app - INFO - Loaded 614 records
+2026-01-10 13:56:17,278 - loan_app - INFO - Preparing features...
+2026-01-10 13:56:17,293 - loan_app - INFO - Features prepared successfully
+2026-01-10 13:56:17,293 - loan_app - INFO - Splitting data into train/test sets (80/20)...
+2026-01-10 13:56:17,296 - loan_app - INFO - Train set: 491 records, Test set: 123 records
+2026-01-10 13:56:17,296 - loan_app - INFO - Training SVC model with StandardScaler pipeline...
+2026-01-10 13:56:17,310 - loan_app - INFO - Model training completed
+2026-01-10 13:56:17,310 - loan_app - INFO - Calculating accuracy on test set...
+2026-01-10 13:56:17,315 - loan_app - INFO - Model Accuracy: 0.7967 (79.67%)
+2026-01-10 13:56:17,315 - loan_app - INFO - Saving model to model.joblib...
+2026-01-10 13:56:17,319 - loan_app - INFO - Model saved successfully
+2026-01-10 13:56:17,319 - loan_app - INFO - Saving accuracy to accuracy.txt...
+2026-01-10 13:56:17,320 - loan_app - INFO - Accuracy saved successfully
+2026-01-10 13:56:17,320 - loan_app - INFO - ======================================================================
+2026-01-10 13:56:17,325 - loan_app - INFO - ======================================================================
+2026-01-10 13:56:17,325 - loan_app - INFO - Final Accuracy: 79.7%
+2026-01-10 13:56:17,325 - loan_app - INFO - Model saved to: model.joblib
+2026-01-10 13:56:17,325 - loan_app - INFO - Accuracy saved to: accuracy.txt
+2026-01-10 13:56:17,325 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:06,322 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:06,323 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:06,324 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:06,324 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:08,398 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:11,266 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:11,268 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:11,269 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:11,271 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:11,276 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:11,293 - loan_app - INFO - Loan application - Married: Married, Education: Graduate, Credit: 1, Income: 5000.0, LoanAmount: 100000.0
+2026-01-10 13:57:11,315 - loan_app - INFO - APPROVED - Income: 5000.0, LoanAmount: 100000.0
+2026-01-10 13:57:12,277 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:12,278 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:12,278 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:12,279 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:12,281 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:12,304 - loan_app - INFO - Accuracy button clicked
+2026-01-10 13:57:12,308 - loan_app - INFO - Model Accuracy: 79.7%
+2026-01-10 13:57:17,255 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:17,255 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:17,256 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:17,256 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:17,257 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:17,267 - loan_app - INFO - Loan application - Married: Married, Education: Graduate, Credit: 1, Income: 3500.0, LoanAmount: 100000.0
+2026-01-10 13:57:17,272 - loan_app - INFO - APPROVED - Income: 3500.0, LoanAmount: 100000.0
+2026-01-10 13:57:21,032 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:21,033 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:21,034 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:21,034 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:21,036 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:21,044 - loan_app - INFO - Loan application - Married: Married, Education: Graduate, Credit: 1, Income: 2800.0, LoanAmount: 100000.0
+2026-01-10 13:57:21,045 - loan_app - WARNING - Rejected: applicant income below 3000 with no coapplicant
+2026-01-10 13:57:25,142 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:25,143 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:25,143 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:25,144 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:25,146 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:25,156 - loan_app - INFO - Loan application - Married: Married, Education: Graduate, Credit: 1, Income: 4100.0, LoanAmount: 100000.0
+2026-01-10 13:57:25,160 - loan_app - INFO - APPROVED - Income: 4100.0, LoanAmount: 100000.0
+2026-01-10 13:57:27,738 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:27,739 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:27,739 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:27,740 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:27,741 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:27,750 - loan_app - INFO - Loan application - Married: Married, Education: Graduate, Credit: 1, Income: 3500.0, LoanAmount: 100000.0
+2026-01-10 13:57:27,755 - loan_app - INFO - APPROVED - Income: 3500.0, LoanAmount: 100000.0
+2026-01-10 13:57:28,578 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:28,579 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:28,579 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:28,580 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:28,582 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:28,592 - loan_app - INFO - Loan application - Married: Married, Education: Graduate, Credit: 1, Income: 3200.0, LoanAmount: 100000.0
+2026-01-10 13:57:28,598 - loan_app - INFO - APPROVED - Income: 3200.0, LoanAmount: 100000.0
+2026-01-10 13:57:32,145 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:32,146 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:32,146 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:32,147 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:32,148 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:32,159 - loan_app - INFO - Loan application - Married: Married, Education: Graduate, Credit: 1, Income: 2800.0, LoanAmount: 100000.0
+2026-01-10 13:57:32,164 - loan_app - INFO - APPROVED - Income: 2800.0, LoanAmount: 100000.0
+2026-01-10 13:57:34,544 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:34,545 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:34,546 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:34,546 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:34,547 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:34,557 - loan_app - INFO - Loan application - Married: Married, Education: Graduate, Credit: 1, Income: 3800.0, LoanAmount: 100000.0
+2026-01-10 13:57:34,562 - loan_app - INFO - APPROVED - Income: 3800.0, LoanAmount: 100000.0
+2026-01-10 13:57:38,548 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:38,549 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:38,550 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:38,551 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:38,553 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:38,574 - loan_app - INFO - Loan application - Married: Married, Education: Graduate, Credit: 0, Income: 3800.0, LoanAmount: 100000.0
+2026-01-10 13:57:38,576 - loan_app - WARNING - Rejected: no credit history
+2026-01-10 13:57:41,299 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:41,299 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:41,300 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:41,300 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:41,302 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:41,313 - loan_app - INFO - Loan application - Married: Married, Education: Not Graduate, Credit: 0, Income: 3800.0, LoanAmount: 100000.0
+2026-01-10 13:57:41,314 - loan_app - WARNING - Rejected: not graduate
+2026-01-10 13:57:44,437 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:44,438 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:44,438 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:44,439 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:44,440 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:44,455 - loan_app - INFO - Loan application - Married: Married, Education: Not Graduate, Credit: 1, Income: 3800.0, LoanAmount: 100000.0
+2026-01-10 13:57:44,456 - loan_app - WARNING - Rejected: not graduate
+2026-01-10 13:57:50,743 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:50,744 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:50,744 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:50,745 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:50,746 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:50,757 - loan_app - INFO - Loan application - Married: Single, Education: Graduate, Credit: 1, Income: 3800.0, LoanAmount: 100000.0
+2026-01-10 13:57:50,757 - loan_app - WARNING - Rejected: not married
+2026-01-10 13:57:55,832 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:55,833 - loan_app - INFO - LOAN APPROVAL CHECKER APP STARTED
+2026-01-10 13:57:55,833 - loan_app - INFO - ======================================================================
+2026-01-10 13:57:55,833 - loan_app - INFO - Loading model from model.joblib...
+2026-01-10 13:57:55,834 - loan_app - INFO - Model loaded successfully
+2026-01-10 13:57:55,843 - loan_app - INFO - Loan application - Married: Married, Education: Graduate, Credit: 1, Income: 3800.0, LoanAmount: 100000.0
+2026-01-10 13:57:55,847 - loan_app - INFO - APPROVED - Income: 3800.0, LoanAmount: 100000.0
